@@ -10,9 +10,10 @@ st.write("### Personal Information")
 
 Month=st.selectbox("Month", ["January", "February", "March", "April", "May", "June", "July", "August"])
 
-Occupation= st.selectbox("Occupation",['Manager' ,'Teacher' ,'Developer', 'Architect', 'Journalist', 'Scientist','MediaManager' ,'Unemployed' ,'Lawyer' ,'Cleaner' ,'Farmer', 'Artist',
-                                       'Accountant', 'Writer' ,'Engineer' ,'Entrepreneur', 'Doctor' ,'Musician'
- 'Mechanic' ,'Student' ,'Pension'])
+Occupation= st.selectbox("Occupation",['Manager' ,'Teacher' ,'Developer', 'Architect', 'Journalist', 'Scientist',
+                                       'MediaManager' ,'Unemployed' ,'Lawyer' ,'Cleaner' ,'Farmer', 'Artist',
+                                       'Accountant', 'Writer' ,'Engineer' ,'Entrepreneur', 'Doctor' ,'Musician',
+                                       'Mechanic' ,'Student' ,'Pension'])
 
 Annual_Income = st.number_input("Annual Income", min_value=0.0, value=0.0)
 
@@ -61,7 +62,7 @@ Credit_Mix = st.selectbox( "Credit Mix", ["Good", "Standard", "Bad"])
 
 
 
-#run the model
+# Run the model
 if st.button("Calculate Credit Score"):
     # Convert categorical variables to numerical
     credit_mix_mapping = {"Good": 0, "Standard": 1, "Bad": 2}
