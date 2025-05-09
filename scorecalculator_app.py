@@ -153,16 +153,18 @@ if st.button("Calculate Credit Score"):
     'Credit_History_Age':               Credit_History_Age_,
     'Payment_of_Min_Amount':            Payment_of_Min_Amount_mapping[Payment_of_Min_Amount],
     'Amount_invested_monthly':          Amount_invested_monthly,
-    'Not Specified':                    Not_Specified,
-    'Student Loan':                     Student_Loan,
-    'Debt Consolidation Loan':          Debt_Consolidation_Loan,
+    
+    'No Loan':                          No_Loan,
     'Mortgage Loan':                    Mortgage_Loan,
+    'Credit-Builder Loan':              Credit_Builder_Loan,
     'Personal Loan':                    Personal_Loan,
     'Payday Loan':                      Payday_Loan,
-    'No Loan':                          No_Loan,
-    'Credit-Builder Loan':              Credit_Builder_Loan,
     'Home Equity Loan':                 Home_Equity_Loan,
     'Auto Loan':                        Auto_Loan,
+    'Student Loan':                     Student_Loan,
+    'Not Specified':                    Not_Specified,
+    'Debt Consolidation Loan':          Debt_Consolidation_Loan,
+    
     'Occupation_Accountant':            Occupation_Accountant,
     'Occupation_Architect':             Occupation_Architect,
     'Occupation_Artist':                Occupation_Artist,
@@ -183,7 +185,7 @@ if st.button("Calculate Credit Score"):
     'Occupation_Student':               Occupation_Student,
     'Occupation_Teacher':               Occupation_Teacher,
     'Occupation_Unemployed':            Occupation_Unemployed,
-    'Occupation_Writer':                Occupation_Writer,
+    'Occupation_Writer':                Occupation_Writer
 
      
     }, index=[0])
